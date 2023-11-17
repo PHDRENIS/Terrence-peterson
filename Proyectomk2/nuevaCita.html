@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Ayuda</title>
+    <link rel="stylesheet" href="styles/NIndex.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/formulario.css"> 
+    <script src="scripts/form.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <header>  
+        <ul class="menu-horizontal">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Red Ayuda</a>
+                <ul class="menu-vertical">
+                    <li><a href="Apoyo_emocional.html">Apoyo emocional </a></li>
+                    <li><a href="Ayuda_pro.html">Ayuda Profesional</a></li>
+                </ul>
+            </li>
+            <li><a href="analisis.html">Análisis</a></li>
+            <li><a href="hola.html">Bienvenido</a></li>
+        </ul>
+    </header>
+
+    <div id="loading" class="loading"></div>
+
+
+    <section class="formulario-section">
+        <form id="citaForm" class="formulario">
+            <h2>Agendar Cita</h2>
+
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+                </select>
+            </div>
+            <div id="loading" class="loading"></div>
+
+            <div id="alert" class="alert"></div>
+            
+            <div class="boton-container">
+                <button type="button" onclick="agendarCita()">Agendar Cita</button>
+                <button type="button" onclick="regresar()">Atras</button>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="red.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="red2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="red3.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

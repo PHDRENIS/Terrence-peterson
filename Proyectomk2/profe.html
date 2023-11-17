@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Ayuda</title>
+    <link rel="stylesheet" href="styles/NIndex.css">
+    <script src="scripts/cita.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body >
+    <header>  <!--Encabezado con el menu-->
+        <ul class="menu-horizontal">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Red Ayuda</a>
+                <ul class="menu-vertical">
+                    <li><a href="Apoyo_emocional.html">Apoyo emocional </a></li>
+                    <li><a href="Ayuda_pro.html">Ayuda Profesional</a></li>
+                </ul>
+            </li>
+            <li><a href="analisis.html">Análisis</a></li>
+            <li><a href="hola.html">Bienvenido</a></li>
+        </ul>
+    </header>
+    
+    <section>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                <img src="img/psico1.jpg" class="card-img-top" alt="Doc.Leal Sotelo Alexander">
+                <div class="card-body">
+                    <h5 class="card-title">Lic.Leal Sotelo Alexander</h5>
+                    <p class="card-text">Mis áreas de especialización incluyen el tratamiento de trastornos psicológicos, la terapia de pareja y la terapia sexual. Me enfoco en comprender las necesidades individuales de cada paciente para diseñar
+                    un plan de tratamiento personalizado que les permita mejorar su calidad de vida y encontrar el bienestar emocional.</p>
+                    <a href="#" class="btn-agendar" onclick="mostrarAlerta(); agendarCita('Lic. Leal Sotelo Alexander')">Agendar Cita</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/psico2.jpg" class="card-img-top" alt="blana">
+                <div class="card-body">
+                    <h5 class="card-title">Lic. Maricruz Olvera</h5>
+                    <p class="card-text">Si busca un espacio donde pueda sentirse escuchado, comprendido y acompañado en su proceso de sanación, lo invito a agendar una cita en cualquiera de mis consultorios en la Ciudad de México de lunes a sabado. Estoy comprometido con la salud mental y el bienestar emocional 
+                        de mis pacientes, y estoy seguro de que juntos podremos trabajar en el camino hacia una vida plena y satisfactoria.</p>
+                        <a href="#" class="btn-agendar" onclick="mostrarAlerta(); agendarCita('Lic. Maricruz Olvera')">Agendar Cita</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/p5.png" class="card-img-top" alt="dsd">
+                <div class="card-body">
+                    <h5 class="card-title">Lic. Verónica Mirthala López Flores</h5>
+                    <p class="card-text">¡Hola! Soy la Lic. Verónica Mirthala López Flores, especialista en Psicología, por la UANL.<br>
+                    El bienestar de mi paciente es mi prioridad, por ello para mi es importante acompañar a mis pacientes con un trato amable y respetuoso.
+                    <br>Brindaré mi apoyo a cada paciente desde el diagnóstico, pasando por todo el proceso de tratamiento hasta que mejore y se recupere.
+                    Puedes sentir la tranquilidad de que tu salud estará en manos expertas.<br>
+                    ¡Será un gusto atenderte!</p>
+                    <a href="#" class="btn-agendar" onclick="mostrarAlerta(); agendarCita('Lic. Verónica Mirthala López Flores')">Agendar Cita</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/psico4.jpg" class="card-img-top" alt="sds">
+                <div class="card-body">
+                    <h5 class="card-title">Lic.Salvador Guillén Perez</h5>
+                    <p class="card-text">Psicólogo con casi 20 años de experiencia, especializado en Atención a Victimas de la Violencia, Depresión, Orientación Sexual y trastornos de la personalidad.<br>
+                        He trabajado en instancias públicas como DIF, Instituto de las Mujeres de N.L., Defensoría de Niños, niñas y adolescentes en diversos municipios y 
+                        coordinando la gestión de recurso y aplicación de proyectos de intervención comunitaria a nivel municipal.</p>
+                        <a href="#" class="btn-agendar" onclick="mostrarAlerta(); agendarCita('Lic.Salvador Guillén Perez')">Agendar Cita</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/p6.jpg" class="card-img-top" alt="sds">
+                <div class="card-body">
+                    <h5 class="card-title">Lic. Martha Sylvia Hernández Benavide</h5>
+                    <p class="card-text">Me presento, soy una psicóloga humanista Gestáltica y Holística comprometida de corazón con el servicio de mi labor y mis pacientes, constantemente me estoy preparando para poder ofrecer el mejor acompañamiento.
+                        Mi formación como terapeuta está basada en la psicología integrativa, adoptando las diversas corrientes psicológicas a la necesidad del paciente, estableciendo objetivos claros y fortaleciendo la voluntad de cada uno de ellos para que logren mantener los cambios esperados en su vida.
+                    </p>
+                    <a href="#" class="btn-agendar" onclick="mostrarAlerta(); agendarCita('Lic. Martha Sylvia Hernández Benavide')">Agendar Cita</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/p7.jpg" class="card-img-top" alt="sds">
+                <div class="card-body">
+                    <h5 class="card-title">Lic. Gabriela Campillo Gonzalez</h5>
+                    <p class="card-text">Soy Psicóloga clínica, psicoterapeuta gestalt y tanatóloga.<br>
+                        Me he mantenido en constante actualización cursando diversos estudios entre los que destacan Ciencias de la felicidad, Desarrollo Humano, Suicidiología para Profesionales de Atención Primaria de SAK Fundación, y Tanatología de la Fundación Elisabeth Kübler-Ross México entre otros.
+                        Desde hace varios años, soy miembro activo del equipo de Fundación EKR México, dando acompañamiento tanatológico principalmente a niños en etapa terminal y adultos mayores.</p>
+                        <a href="#" class="btn-agendar" onclick="mostrarAlerta(); agendarCita('Lic. Gabriela Campillo Gonzalez')">Agendar Cita</a>
+                </div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="popup">
+                    <p>¡Bienvenido!</p>
+                    <p>¿Deseas seguir con el siguiente paso?</p>
+                    <a href="nuevaCita.html" class="btn-siguiente" onclick="ocultarAlerta()">Siguiente</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="red.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="red2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="red3.html">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+            </nav>
+    </footer>
+    <script src="scripts/cita.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+    <link rel="stylesheet" href="styles/playa.css">
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+
+    <div class="contenedor-imagenes">
+        <img src="https://www.canalgif.net/Gifs-animados/Agua/Playas/Gif-animado-Playa-29.gif" alt="Playa Tranquila" class="fondo-imagen">
+        <img src="img/Terrence.png" alt="Terrence" class="imagen-superpuesta">
+        <div class="contenedor-mensaje">¡Sígueme!</div>
+        <img src="img/sigueme.png" alt="sigueme" class="imagen-link" onclick="redirigirAIndex()">
+        <p id="mensaje-bienvenida" class="mensaje">Hola!!</p>
+    </div>
+
+    <script src="scripts/playa.js"></script>
+
+    <script>
+        // JavaScript para cambiar el mensaje de bienvenida
+        var mensajes = [
+            "Hola yo soy Terrence Peterson",
+            "Espero podamos ser amigos",
+            "Recuerda que nadie nace para estar solo",
+            "Por que yo soy tu amigo"
+        ];
+
+        var indiceMensaje = 0;
+        var mensajeBienvenida = document.getElementById("mensaje-bienvenida");
+
+        // Función para cambiar el mensaje cada 3 segundos
+        function cambiarMensaje() {
+            mensajeBienvenida.textContent = mensajes[indiceMensaje];
+            indiceMensaje = (indiceMensaje + 1) % mensajes.length;
+        }
+
+        // Cambia el mensaje inicialmente y luego cada 6 segundos
+        cambiarMensaje();
+        setInterval(cambiarMensaje, 5000);
+
+        // Crear el elemento de audio
+        var musicafondo = new Audio();
+        musicafondo.src = "sounds/Undertale OST_ 012 - Home.wav"; // Ajusta la ruta según tu estructura de carpetas
+        musicafondo.type = "audio/wav";
+
+        // Configuración del audio
+        musicafondo.controls = false;
+        musicafondo.autoplay = true;
+        musicafondo.loop = true; // Reproducir en bucle
+
+        // Agregar el elemento de audio al cuerpo del documento
+        document.body.appendChild(musicafondo);
+
+        function redirigirAIndex() {
+            // Redirige a index.html al hacer clic en la imagen
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>

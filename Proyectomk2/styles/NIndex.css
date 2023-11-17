@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../img/p3.webp');
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(182, 234, 165, 0.86);
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    width: 100%; 
+}
+
+.menu-horizontal > li {
+    width: 150px;
+    height: 80px; /* Ajusta el ancho de cada elemento de menú */
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: rgba(15, 14, 14, 0.56);
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center; /* Centrar el texto */
+}
+
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(121, 142, 191, 0.86);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: black;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+#html {
+    margin: auto;
+    padding: 20px;
+    max-width: 900px;
+    background: white;
+}
+
+.header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 0;
+}
+
+.menu a {
+    margin: 0 15px;
+}
+
+.visually-hidden {
+    color: #484747; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.carousel-container {
+    margin-top: 100px; /* Ajusta según sea necesario para crear espacio entre el menú y el carrusel */
+}
+/* Estilos generales */
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+ /* Relleno interno del contenedor */
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center;
+    color: #333; /* Color del texto */
+    font-size: 2em; /* Tamaño de la fuente */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+h2 {
+    text-align: center;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el texto */
+p {
+    color: #555; /* Color del texto */
+    line-height: 1.5; /* Altura de línea para una fácil lectura */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Estilos para los pasos del método */
+ol {
+    list-style: none; /* Eliminar los puntos de la lista ordenada */
+    padding-left: 0; /* Eliminar el relleno izquierdo de la lista ordenada */
+}
+
+ol li {
+    margin-bottom: 10px; /* Espaciado inferior entre los elementos de la lista */
+}
+
+/* Estilos para las preguntas y respuestas */
+strong {
+    color: #007bff; /* Color para resaltar las preguntas */
+}
+
+/* Estilos para el fondo del div */
+div {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 20px; /* Relleno interno */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+footer {
+    background-color: #60b060; /* Color verde sólido, puedes ajustar el código de color según tus preferencias */
+    padding: 20px;
+    color: #fff; /* Color del texto dentro del pie de página, puedes ajustar según tus preferencias */
+    text-align: center;
+}
+
+.card {
+    width: 100%; /* O el ancho que desees */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+ /* Agrega estilos según sea necesario */
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.btn-agendar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilos para la alerta flotante */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.btn-siguiente {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

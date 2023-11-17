@@ -1,0 +1,49 @@
+/* estilos.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/art-background4.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Cambiado el color del texto */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos en el contenedor */
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    flex: 0 0 15%;
+    box-sizing: border-box;
+    background: rgba(241, 235, 235, 0.9); /* Ajusta la opacidad */
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #444; /* Cambiado el color del título */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555; /* Cambiado el color del enlace */
+}
+
+/* Agrega estilos adicionales según sea necesario */
